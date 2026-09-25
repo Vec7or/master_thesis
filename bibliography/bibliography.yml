@@ -1,0 +1,177 @@
+project-work-firmups:
+  type: Article
+  title: Secure Update Framework for Embedded Devices
+  author: ["Carlo Kirchmeier"]
+  date: 2026-01-25
+  publisher:
+    name: Eastern Switzerland University of Applied Sciences
+    location: St. Gallen, Switzerland
+
+adr-github:
+  type: web
+  title: "ADR GitHub organization"
+  date: 2026
+  url:
+    value: https://adr.github.io/
+    date: 2026-02-20
+
+ncsc-pqc-migration-timelines:
+  type: Report
+  title: "Timelines for migration to post-quantum cryptography"
+  subtitle: "Activities which organisations must carry out to migrate safely to post-quantum cryptography in the coming years"
+  author: National Cyber Security Centre
+  date: 2025-03-20
+  serial-number:
+    version: "1.0"
+  publisher:
+    name: National Cyber Security Centre
+    location: London, United Kingdom
+  url:
+    value: https://www.ncsc.gov.uk/guidance/pqc-migration-timelines
+    date: 2026-10-16
+
+mcuboot-lms-pr:
+  type: web
+  title: "Add LMS signature support (Pull Request #2707)"
+  author: "d3zd3z"
+  date: 2026-04-23
+  parent:
+    type: Repository
+    title: mcu-tools/mcuboot
+  note: "Open, last updated 2026-06-05; simulator support only, no platform implementations"
+  url:
+    value: https://github.com/mcu-tools/mcuboot/pull/2707
+    date: 2026-10-16
+
+mcuboot-pqc-discussion:
+  type: web
+  title: "Post-quantum cryptography (Discussion #1099)"
+  author: "d3zd3z"
+  date: 2021-08-12
+  parent:
+    type: Repository
+    title: mcu-tools/mcuboot
+  note: "Last activity 2026-05-19; no maintainer commitment to a roadmap"
+  url:
+    value: https://github.com/mcu-tools/mcuboot/discussions/1099
+    date: 2026-10-16
+
+renesas-fsp-mcuboot:
+  type: web
+  title: "MCUboot Port (rm_mcuboot_port)"
+  author: Renesas Electronics
+  date: 2026
+  parent:
+    type: Reference
+    title: "Renesas RA Flexible Software Package Documentation, Release v6.6.0"
+  url:
+    value: https://renesas.github.io/fsp/group___r_m___m_c_u_b_o_o_t___p_o_r_t.html
+    date: 2026-10-16
+
+wolfboot-pq-docs:
+  type: web
+  title: "wolfBoot: Post-Quantum Signatures"
+  author: wolfSSL
+  date: 2026
+  parent:
+    type: Repository
+    title: wolfSSL/wolfBoot
+  url:
+    value: https://github.com/wolfSSL/wolfBoot/blob/master/docs/PQ.md
+    date: 2026-10-16
+
+wolfboot-imx95:
+  type: web
+  title: "Post-Quantum Secure Boot on the NXP i.MX95 Cortex-M7"
+  author: wolfSSL
+  date: 2026-09
+  url:
+    value: https://www.wolfssl.com/post-quantum-secure-boot-on-the-nxp-i-mx95-cortex-m7/
+    date: 2026-10-16
+
+mldsa-cortexm0-bench:
+  type: Article
+  title: "Benchmarking NIST-Standardised ML-KEM and ML-DSA on ARM Cortex-M0+: Latency, Rejection-Sampling Variance, and Memory on the RP2040"
+  author: ["Rojin Chhetri", "Sijan Dhakal", "Asmita Gautam"]
+  date: 2026-08-11
+  serial-number:
+    arxiv: "2603.19340v6"
+  url:
+    value: https://arxiv.org/abs/2603.19340
+    date: 2026-10-16
+
+ricardini-pq-secure-boot:
+  type: Article
+  title: "Short Paper: Toward Practical Post-Quantum Secure Boot: Lessons from Resource-Constrained Deployment"
+  author: "Jefferson Ricardini"
+  date: 2025-10-13
+  parent:
+    type: Proceedings
+    title: "Proceedings of the 2025 1st ACM CCS Workshop on Quantum-Resistant Cryptography and Security"
+    publisher: ACM
+  serial-number:
+    doi: "10.1145/3733820.3767142"
+
+banegas-pq-suit:
+  type: Article
+  title: "Quantum-Resistant Security for Software Updates on Low-power Networked Embedded Devices"
+  author:
+    ["Gustavo Banegas", "Koen Zandberg", "Adrian Herrmann", "Emmanuel Baccelli", "Benjamin Smith"]
+  date: 2021
+  serial-number:
+    arxiv: "2106.05577"
+  url:
+    value: https://arxiv.org/abs/2106.05577
+    date: 2026-10-16
+
+keelsign:
+  type: Repository
+  title: "keelsign: Post-quantum firmware signing for MCUboot and embassy-boot"
+  author: "smhasan94"
+  date: 2026-09-28
+  url:
+    value: https://github.com/smhasan94/keelsign
+    date: 2026-10-16
+
+tf-psa-crypto-mldsa:
+  type: web
+  title: "ChangeLog.d/mldsa.txt: limited subset of ML-DSA in the driver dispatch layer"
+  author: "Mbed TLS project"
+  date: 2026-10-15
+  parent:
+    type: Repository
+    title: Mbed-TLS/TF-PSA-Crypto
+  note: "Only pure ML-DSA-87; experimental; not yet exposed to applications"
+  url:
+    value: https://github.com/Mbed-TLS/TF-PSA-Crypto
+    date: 2026-10-16
+
+nist-sp800-82r3:
+  type: Report
+  title: "Guide to Operational Technology (OT) Security"
+  author:
+    ["Keith Stouffer", "Michael Pease", "CheeYee Tang", "Timothy Zimmerman", "Victoria Pillitteri", "Suzanne Lightman", "Adam Hahn", "Stephanie Saravia", "Aslam Sherule", "Michael Thompson"]
+  date: 2023-09
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST SP 800-82r3"
+    doi: "10.6028/NIST.SP.800-82r3"
+  url:
+    value: https://doi.org/10.6028/NIST.SP.800-82r3
+    date: 2026-10-16
+
+rfc9019:
+  type: Report
+  title: "A Firmware Update Architecture for Internet of Things"
+  author: ["Brendan Moran", "Hannes Tschofenig", "David Brown", "Milosch Meriac"]
+  date: 2021-04
+  publisher:
+    name: Internet Engineering Task Force
+  serial-number:
+    serial: "RFC 9019"
+    doi: "10.17487/RFC9019"
+  url:
+    value: https://www.rfc-editor.org/rfc/rfc9019
+    date: 2026-10-16
