@@ -124,15 +124,6 @@ banegas-pq-suit:
     value: https://arxiv.org/abs/2106.05577
     date: 2026-10-16
 
-keelsign:
-  type: Repository
-  title: "keelsign: Post-quantum firmware signing for MCUboot and embassy-boot"
-  author: "smhasan94"
-  date: 2026-09-28
-  url:
-    value: https://github.com/smhasan94/keelsign
-    date: 2026-10-16
-
 tf-psa-crypto-mldsa:
   type: web
   title: "ChangeLog.d/mldsa.txt: limited subset of ML-DSA in the driver dispatch layer"
@@ -160,18 +151,4 @@ nist-sp800-82r3:
     doi: "10.6028/NIST.SP.800-82r3"
   url:
     value: https://doi.org/10.6028/NIST.SP.800-82r3
-    date: 2026-10-16
-
-rfc9019:
-  type: Report
-  title: "A Firmware Update Architecture for Internet of Things"
-  author: ["Brendan Moran", "Hannes Tschofenig", "David Brown", "Milosch Meriac"]
-  date: 2021-04
-  publisher:
-    name: Internet Engineering Task Force
-  serial-number:
-    serial: "RFC 9019"
-    doi: "10.17487/RFC9019"
-  url:
-    value: https://www.rfc-editor.org/rfc/rfc9019
     date: 2026-10-16

@@ -7,80 +7,18 @@
     description: "A demonstration that a concept or idea is feasible.",
   ),
   (
+    key: "rq",
+    short: "RQ",
+    plural: "RQs",
+    long: "Research Question",
+    longplural: "Research Questions",
+    description: [A question this work sets out to answer. The three research questions of this project are stated in the task and are referred to as RQ 1, RQ 2 and RQ 3.],
+  ),
+  (
     key: "feature-freeze",
     short: "Feature Freeze",
     long: "Feature Freeze",
     description: "A point in the project timeline where no new features will be added, and the focus shifts to stabilization and bug fixing.",
-  ),
-  (
-    key: "end-of-elaboration-checklist",
-    short: "End of Elaboration Checklist",
-    long: "End of Elaboration Checklist",
-    description: [
-      A list of points that need to be addressed and completed before reaching the #gls("end-of-elaboration", first: false) milestone. The points are as follows:
-      - Understood the needs of the stakeholders. Requirements as complete as possible and the scope of the project is at least loosely defined.
-      - All tools are understood and set up (IDE, versioning, build system, CI/CD, etc.)
-      - The architecture is defined and documented (components, interfaces, data flow, etc.)
-      - All big risks as well as questions are addressed and mitigated.
-    ],
-  ),
-  (
-    key: "rup",
-    short: "RUP",
-    long: "Rational Unified Process",
-    description: "An iterative software development process framework.",
-  ),
-  (
-    key: "end-of-elaboration",
-    short: "End of Elaboration",
-    long: "End of Elaboration",
-    description: [
-      Milestone in the #gls("rup", first: false) methodology at which the greatest risks must be eliminated. At this milestone, a decision is made as to whether the project can continue or not.
-    ],
-  ),
-  (
-    key: "scrum+",
-    short: "Scrum+",
-    long: "Scrum+ Methodology",
-    description: [
-      Project methodology combining Scrum with the #gls("end-of-elaboration", first: false) phase of #gls("rup", first: false).
-    ],
-  ),
-  (
-    key: "clockify",
-    short: "Clockify",
-    long: "Clockify",
-    description: [Tool for time tracking and reporting. Available at https://clockify.me],
-  ),
-  (
-    key: "github",
-    short: "GitHub",
-    long: "GitHub",
-    description: [Web-based platform for version control and collaboration. Available at https://github.com],
-  ),
-  (
-    key: "github-actions",
-    short: "GitHub Actions",
-    long: "GitHub Actions",
-    description: "CI/CD platform integrated with GitHub for automating workflows.",
-  ),
-  (
-    key: "typst",
-    short: "Typst",
-    long: "Typst",
-    description: [A modern markup-based typesetting system. Available at https://typst.app],
-  ),
-  (
-    key: "copilot",
-    short: "Copilot",
-    long: "Copilot",
-    description: "LLM by microsoft available in different versions like Github Copilot or M365 Copilot.",
-  ),
-  (
-    key: "tbd-workflow",
-    short: "TBD-Workflow",
-    long: "Trunk-Based Development Workflow",
-    description: [A branching model that emphasizes continuous integration and short-lived branches. Available at https://trunkbaseddevelopment.com/],
   ),
   (
     key: "adr",
@@ -93,6 +31,12 @@
     short: "Zephyr RTOS",
     long: "Zephyr Real-Time Operating System",
     description: [An open-source real-time operating system for connected, resource-constrained devices. See: https://zephyrproject.org/],
+  ),
+  (
+    key: "mcuboot",
+    short: "MCUboot",
+    long: "MCUboot",
+    description: [A secure bootloader for 32-bit microcontrollers that provides image verification and software upgrade. It is not tied to a specific operating system or hardware and relies on porting layers from the operating system it is used with; #gls("zephyr-rtos", first: false), Apache Mynewt, Apache NuttX, RIOT and Mbed OS are supported. See: https://docs.mcuboot.com/],
   ),
   (
     key: "ot",
