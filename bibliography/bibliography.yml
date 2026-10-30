@@ -124,15 +124,14 @@ banegas-pq-suit:
     value: https://arxiv.org/abs/2106.05577
     date: 2026-10-16
 
-tf-psa-crypto-mldsa:
-  type: web
-  title: "ChangeLog.d/mldsa.txt: limited subset of ML-DSA in the driver dispatch layer"
+tf-psa-crypto:
+  type: Repository
+  title: "TF-PSA-Crypto"
   author: "Mbed TLS project"
-  date: 2026-10-15
-  parent:
-    type: Repository
-    title: Mbed-TLS/TF-PSA-Crypto
-  note: "Only pure ML-DSA-87; experimental; not yet exposed to applications"
+  date: 2026-06-01
+  serial-number:
+    version: "1.1.0"
+  note: "ML-DSA restricted to ML-DSA-87 via the experimental PQCP mldsa-native driver, disabled by default and without a public PSA algorithm identifier; LMS restricted to the single parameter set LMS_SHA256_M32_H10 with LMOTS_SHA256_N32_W8"
   url:
     value: https://github.com/Mbed-TLS/TF-PSA-Crypto
     date: 2026-10-16

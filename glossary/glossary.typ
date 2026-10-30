@@ -81,10 +81,28 @@
     description: [Stateful hash-based signature scheme specified in RFC 8554 and approved in NIST SP 800-208, often used for firmware signing.],
   ),
   (
+    key: "hss",
+    short: "HSS",
+    long: "Hierarchical Signature System",
+    description: [Multi-tree construction over #gls("lms", first: false), specified alongside it in RFC 8554. A tree of #gls("lms", first: false) trees multiplies the available signature capacity and keeps key generation tractable, at the cost of larger signatures, since the signed public keys of the lower levels are carried in every signature.],
+  ),
+  (
+    key: "xmss",
+    short: "XMSS",
+    long: "eXtended Merkle Signature Scheme",
+    description: [Stateful hash-based signature scheme specified in RFC 8391 and approved in NIST SP 800-208, closely related to #gls("lms", first: false) but using WOTS+ one-time signatures and bitmasked tree hashing. Its multi-tree variant is XMSS#super[MT].],
+  ),
+  (
     key: "suit",
     short: "SUIT",
     long: "Software Updates for Internet of Things",
     description: [IETF manifest format and architecture for firmware updates of constrained devices, specified in RFC 9019 and RFC 9124 and following documents.],
+  ),
+  (
+    key: "sdk",
+    short: "SDK",
+    long: "Software Development Kit",
+    description: [A vendor-supplied collection of drivers, libraries, middleware and build tooling for developing software on a specific hardware platform, released and versioned as a single package.],
   ),
   // Add more terms
 )
