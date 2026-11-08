@@ -7,7 +7,7 @@
       pkgs = import nixpkgs { inherit system; };
     in {
       devShells.x86_64-linux.default = pkgs.mkShell {
-        name = "firmups-docs";
+        name = "master-thesis";
         buildInputs = with pkgs; [
           typst
           tinymist

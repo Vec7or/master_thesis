@@ -89,16 +89,21 @@ wolfboot-imx95:
     value: https://www.wolfssl.com/post-quantum-secure-boot-on-the-nxp-i-mx95-cortex-m7/
     date: 2026-10-16
 
-mldsa-cortexm0-bench:
+riou-mldsa-benchmarking:
   type: Article
-  title: "Benchmarking NIST-Standardised ML-KEM and ML-DSA on ARM Cortex-M0+: Latency, Rejection-Sampling Variance, and Memory on the RP2040"
-  author: ["Rojin Chhetri", "Sijan Dhakal", "Asmita Gautam"]
-  date: 2026-08-11
+  title: "Apples, Oranges, and Signatures: Pitfalls and Methodology in ML-DSA Benchmarking"
+  author:
+    ["Sebastien Riou", "Jong-Yeon Park", "Liga Anwar", "Axel Poschmann", "Michael Hutter"]
+  date: 2026-07-08
+  parent:
+    type: Proceedings
+    title: "Migration and Agility in Cryptographic Systems (MAgiCS 2026), Communications in Computer and Information Science, vol. 3002"
+    publisher: Springer
   serial-number:
-    arxiv: "2603.19340v6"
+    doi: "10.1007/978-3-032-28946-9_7"
   url:
-    value: https://arxiv.org/abs/2603.19340
-    date: 2026-10-16
+    value: https://eprint.iacr.org/2026/1333
+    date: 2026-11-06
 
 ricardini-pq-secure-boot:
   type: Article
@@ -124,15 +129,14 @@ banegas-pq-suit:
     value: https://arxiv.org/abs/2106.05577
     date: 2026-10-16
 
-tf-psa-crypto-mldsa:
-  type: web
-  title: "ChangeLog.d/mldsa.txt: limited subset of ML-DSA in the driver dispatch layer"
+tf-psa-crypto:
+  type: Repository
+  title: "TF-PSA-Crypto"
   author: "Mbed TLS project"
-  date: 2026-10-15
-  parent:
-    type: Repository
-    title: Mbed-TLS/TF-PSA-Crypto
-  note: "Only pure ML-DSA-87; experimental; not yet exposed to applications"
+  date: 2026-06-01
+  serial-number:
+    version: "1.1.0"
+  note: "ML-DSA restricted to ML-DSA-87 via the experimental PQCP mldsa-native driver, disabled by default and without a public PSA algorithm identifier. LMS restricted to the single parameter set LMS_SHA256_M32_H10 with LMOTS_SHA256_N32_W8"
   url:
     value: https://github.com/Mbed-TLS/TF-PSA-Crypto
     date: 2026-10-16
@@ -141,7 +145,7 @@ nist-sp800-82r3:
   type: Report
   title: "Guide to Operational Technology (OT) Security"
   author:
-    ["Keith Stouffer", "Michael Pease", "CheeYee Tang", "Timothy Zimmerman", "Victoria Pillitteri", "Suzanne Lightman", "Adam Hahn", "Stephanie Saravia", "Aslam Sherule", "Michael Thompson"]
+    ["Keith Stouffer", "Michase", "CheeYee Tang", "Timothy Zimmerman", "Victoria Pillitteri", "Suzanne Lightman", "Adam Hahn", "Stephanie Saravia", "Aslam Sherule", "Michael Thompson"]
   date: 2023-09
   publisher:
     name: National Institute of Standards and Technology
@@ -152,3 +156,4 @@ nist-sp800-82r3:
   url:
     value: https://doi.org/10.6028/NIST.SP.800-82r3
     date: 2026-10-16
+ael Pe
