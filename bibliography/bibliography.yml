@@ -145,7 +145,7 @@ nist-sp800-82r3:
   type: Report
   title: "Guide to Operational Technology (OT) Security"
   author:
-    ["Keith Stouffer", "Michase", "CheeYee Tang", "Timothy Zimmerman", "Victoria Pillitteri", "Suzanne Lightman", "Adam Hahn", "Stephanie Saravia", "Aslam Sherule", "Michael Thompson"]
+    ["Keith Stouffer", "Michael Pease", "CheeYee Tang", "Timothy Zimmerman", "Victoria Pillitteri", "Suzanne Lightman", "Adam Hahn", "Stephanie Saravia", "Aslam Sherule", "Michael Thompson"]
   date: 2023-09
   publisher:
     name: National Institute of Standards and Technology
@@ -156,4 +156,121 @@ nist-sp800-82r3:
   url:
     value: https://doi.org/10.6028/NIST.SP.800-82r3
     date: 2026-10-16
-ael Pe
+
+fips-204:
+  type: Report
+  title: "Module-Lattice-Based Digital Signature Standard"
+  author: National Institute of Standards and Technology
+  date: 2024-08-13
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST FIPS 204"
+    doi: "10.6028/NIST.FIPS.204"
+  url:
+    value: https://doi.org/10.6028/NIST.FIPS.204
+    date: 2026-11-08
+
+fips-205:
+  type: Report
+  title: "Stateless Hash-Based Digital Signature Standard"
+  author: National Institute of Standards and Technology
+  date: 2024-08-13
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST FIPS 205"
+    doi: "10.6028/NIST.FIPS.205"
+  url:
+    value: https://doi.org/10.6028/NIST.FIPS.205
+    date: 2026-11-08
+
+nist-sp800-208:
+  type: Report
+  title: "Recommendation for Stateful Hash-Based Signature Schemes"
+  author: ["David A. Cooper", "Daniel C. Apon", "Quynh H. Dang", "Michael S. Davidson", "Morris J. Dworkin", "Carl A. Miller"]
+  date: 2020-10
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST SP 800-208"
+    doi: "10.6028/NIST.SP.800-208"
+  url:
+    value: https://doi.org/10.6028/NIST.SP.800-208
+    date: 2026-11-08
+
+rfc-8554:
+  type: Report
+  title: "Leighton-Micali Hash-Based Signatures"
+  author: ["David McGrew", "Michael Curcio", "Scott Fluhrer"]
+  date: 2019-04
+  publisher:
+    name: Internet Engineering Task Force
+  serial-number:
+    serial: "RFC 8554"
+    doi: "10.17487/RFC8554"
+  url:
+    value: https://www.rfc-editor.org/rfc/rfc8554
+    date: 2026-11-08
+
+rfc-8391:
+  type: Report
+  title: "XMSS: eXtended Merkle Signature Scheme"
+  author: ["Andreas Huelsing", "Denis Butin", "Stefan-Lukas Gazdag", "Joost Rijneveld", "Aziz Mohaisen"]
+  date: 2018-05
+  publisher:
+    name: Internet Engineering Task Force
+  serial-number:
+    serial: "RFC 8391"
+    doi: "10.17487/RFC8391"
+  url:
+    value: https://www.rfc-editor.org/rfc/rfc8391
+    date: 2026-11-08
+
+fips-206-status:
+  type: Misc
+  title: "FIPS 206 Status Update"
+  author: ["Ray Perlner"]
+  date: 2025
+  parent:
+    type: Conference
+    title: "Sixth PQC Standardization Conference"
+    publisher:
+      name: National Institute of Standards and Technology
+      location: Gaithersburg, MD, USA
+  url:
+    value: https://csrc.nist.gov/presentations/2025/fips-206-fn-dsa-falcon
+    date: 2026-11-08
+
+fips-186-5:
+  type: Report
+  title: "Digital Signature Standard (DSS)"
+  author: National Institute of Standards and Technology
+  date: 2023-02-03
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST FIPS 186-5"
+    doi: "10.6028/NIST.FIPS.186-5"
+  url:
+    value: https://doi.org/10.6028/NIST.FIPS.186-5
+    date: 2026-11-08
+
+nist-ir-8610:
+  type: Report
+  title: "Status Report on the Second Round of the Additional Digital Signature Schemes for the NIST Post-Quantum Cryptography Standardization Process"
+  author: ["Gorjan Alagic", "Maxime Bros", "Pierre Ciadoux", "Quynh Dang", "Thinh Dang", "John Kelsey", "Jacob Lichtinger", "Yi-Kai Liu", "Carl Miller", "Dustin Moody", "Rene Peralta", "Ray Perlner", "Angela Robinson", "Hamilton Silberg", "Daniel Smith-Tone", "Noah Waller"]
+  date: 2026-05
+  publisher:
+    name: National Institute of Standards and Technology
+    location: Gaithersburg, MD, USA
+  serial-number:
+    serial: "NIST IR 8610"
+    doi: "10.6028/NIST.IR.8610"
+  url:
+    value: https://doi.org/10.6028/NIST.IR.8610
+    date: 2026-11-08

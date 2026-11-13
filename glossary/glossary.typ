@@ -57,22 +57,57 @@
     description: [The national cyber security authority of the United Kingdom, which among other things publishes the migration timeline for post-quantum cryptography referenced in this work. See: https://www.ncsc.gov.uk/],
   ),
   (
+    key: "nist",
+    short: "NIST",
+    long: "National Institute of Standards and Technology",
+    description: [The standards body of the United States Department of Commerce, which publishes the FIPS and SP series and runs the standardisation process for #gls("pqc", first: false) whose outputs this work builds on. See: https://www.nist.gov/],
+  ),
+  (
     key: "pqc",
     short: "PQC",
     long: "Post-Quantum Cryptography",
     description: [Cryptographic algorithms that are designed to remain secure against an attacker in possession of a cryptographically relevant quantum computer.],
   ),
   (
+    key: "rsa",
+    short: "RSA",
+    long: "Rivest–Shamir–Adleman",
+    description: [Classical public-key cryptosystem whose security rests on the hardness of integer factorisation. Approved for signatures in NIST FIPS 186-5 and implemented by upstream #gls("mcuboot", first: false) today; broken by #gls("shor", first: false).],
+  ),
+  (
+    key: "dsa",
+    short: "DSA",
+    long: "Digital Signature Algorithm",
+    description: [Classical signature scheme over the discrete logarithm problem in a finite field, introduced with the original Digital Signature Standard. NIST FIPS 186-5 withdrew it from signature generation while still approving it for the verification of signatures produced earlier; broken by #gls("shor", first: false).],
+  ),
+  (
+    key: "ecdsa",
+    short: "ECDSA",
+    long: "Elliptic Curve Digital Signature Algorithm",
+    description: [Classical signature scheme over the discrete logarithm problem on an elliptic curve, approved in NIST FIPS 186-5 and implemented by upstream #gls("mcuboot", first: false) today. Broken by #gls("shor", first: false).],
+  ),
+  (
+    key: "eddsa",
+    short: "EdDSA",
+    long: "Edwards-Curve Digital Signature Algorithm",
+    description: [Classical signature scheme over twisted Edwards curves with deterministic nonce derivation, approved in NIST FIPS 186-5 with Ed25519 as its commonly used instance. Broken by #gls("shor", first: false).],
+  ),
+  (
+    key: "shor",
+    short: "Shor’s algorithm",
+    description: [Quantum algorithm that solves integer factorisation and the discrete logarithm in polynomial time. It breaks #gls("rsa", first: false), #gls("dsa", first: false), #gls("ecdsa", first: false) and #gls("eddsa", first: false) outright once a cryptographically relevant quantum computer exists, which is the reason the #gls("pqc", first: false) portfolio exists.],
+  ),
+  (
     key: "ml-dsa",
     short: "ML-DSA",
     long: "Module-Lattice-Based Digital Signature Algorithm",
-    description: [Lattice-based #gls("pqc", first: false) signature scheme standardized in NIST FIPS 204, derived from CRYSTALS-Dilithium.],
+    description: [Lattice-based #gls("pqc", first: false) signature scheme standardised in #gls("nist", first: false) FIPS 204, derived from CRYSTALS-Dilithium.],
   ),
   (
     key: "slh-dsa",
     short: "SLH-DSA",
     long: "Stateless Hash-Based Digital Signature Algorithm",
-    description: [Stateless hash-based #gls("pqc", first: false) signature scheme standardized in NIST FIPS 205, derived from SPHINCS+.],
+    description: [Stateless hash-based #gls("pqc", first: false) signature scheme standardised in NIST FIPS 205, derived from SPHINCS+.],
   ),
   (
     key: "lms",
@@ -90,7 +125,13 @@
     key: "xmss",
     short: "XMSS",
     long: "eXtended Merkle Signature Scheme",
-    description: [Stateful hash-based signature scheme specified in RFC 8391 and approved in NIST SP 800-208, closely related to #gls("lms", first: false) but using WOTS+ one-time signatures and bitmasked tree hashing. Its multi-tree variant is XMSS#super[MT].],
+    description: [Stateful hash-based signature scheme specified in RFC 8391 and approved in NIST SP 800-208, closely related to #gls("lms", first: false) but using WOTS+ one-time signatures and bitmasked tree hashing. Its multi-tree variant is #gls("xmss-mt", first: false).],
+  ),
+  (
+    key: "xmss-mt",
+    short: "XMSS-MT",
+    long: "Multi-Tree eXtended Merkle Signature Scheme",
+    description: [Multi-tree variant of #gls("xmss", first: false), specified alongside it in RFC 8391 and approved in NIST SP 800-208. A tree of #gls("xmss", first: false) trees raises the available signature capacity in the same way #gls("hss", first: false) does over #gls("lms", first: false), at the cost of larger signatures.],
   ),
   (
     key: "suit",
@@ -103,6 +144,12 @@
     short: "SDK",
     long: "Software Development Kit",
     description: [A vendor-supplied collection of drivers, libraries, middleware and build tooling for developing software on a specific hardware platform, released and versioned as a single package.],
+  ),
+  (
+    key: "fn-dsa",
+    short: "FN-DSA",
+    long: "FFT over NTRU-Lattice-Based Digital Signature Algorithm",
+    description: [Lattice-based #gls("pqc", first: false) signature scheme derived from FALCON. It produces the smallest signatures of the #gls("pqc", first: false) signature candidates, but its standard, NIST FIPS 206, has not been published, not even as an initial public draft @fips-206-status.],
   ),
   // Add more terms
 )
